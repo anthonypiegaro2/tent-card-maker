@@ -1,4 +1,5 @@
 import { Header } from "@/components/app/header"
+import { PrintCards } from "@/components/app/print-cards"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useForm } from "@tanstack/react-form"
@@ -156,11 +157,13 @@ function App() {
             </div>
 
             <div className="flex justify-end">
-              <form.Subscribe selector={(state) => state.canSubmit}>
-                {(canSubmit) => (
-                  <Button type="submit" disabled={!canSubmit}>
-                    Create Cards
-                  </Button>
+              <form.Subscribe
+                selector={(state) =>
+                  [state.canSubmit, state.values.people] as const
+                }
+              >
+                {([canSubmit, people]) => (
+                  <PrintCards cards={people} canSubmit={canSubmit} />
                 )}
               </form.Subscribe>
             </div>

@@ -44,8 +44,8 @@ export function PrintCards({
                           alt="SETA"
                           className="h-16 mb-5.5 mt-9"
                         />
-                        <p className="text-7xl font-medium w-full text-center mb-4">{card.name}</p>
-                        <h2 className="text-2xl font-medium">{card.title}</h2>
+                        <p className="font-serif text-6xl font-[500] w-full text-center mb-4">{card.name}</p>
+                        <h2 className="font-serif text-3xl font-medium">{card.title}</h2>
                       </div>
                     </div>
                   </div>
@@ -59,8 +59,8 @@ export function PrintCards({
                           alt="SETA"
                           className="h-16 mb-5.5 mt-9"
                         />
-                        <p className="text-7xl font-medium w-full text-center mb-4">{card.name}</p>
-                        <h2 className="text-2xl font-medium">{card.title}</h2>
+                        <p className="font-serif text-6xl font-[500] w-full text-center mb-4">{card.name}</p>
+                        <h2 className="font-serif text-3xl font-medium">{card.title}</h2>
                       </div>
                     </div>
                   </div>

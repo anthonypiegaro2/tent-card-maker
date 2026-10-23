@@ -58,7 +58,6 @@ function App() {
                     <tr className="text-xs font-medium text-muted-foreground">
                       <th scope="col" className="px-4 py-3 sm:px-5">Name</th>
                       <th scope="col" className="px-4 py-3 sm:px-5">Title</th>
-                      <th scope="col" className="px-4 py-3 sm:px-5">Department</th>
                       <th scope="col" className="w-14 px-4 py-3 sm:px-5">
                         <span className="sr-only">Actions</span>
                       </th>
@@ -93,22 +92,6 @@ function App() {
                                       aria-label={`Title, row ${index + 1}`}
                                       autoComplete="off"
                                       placeholder="Title"
-                                      value={inputField.state.value}
-                                      onBlur={inputField.handleBlur}
-                                      onChange={(event) =>
-                                        inputField.handleChange(event.target.value)
-                                      }
-                                    />
-                                  )}
-                                </form.Field>
-                              </td>
-                              <td className="px-4 py-3 sm:px-5">
-                                <form.Field name={`people[${index}].department`}>
-                                  {(inputField) => (
-                                    <Input
-                                      aria-label={`Department, row ${index + 1}`}
-                                      autoComplete="off"
-                                      placeholder="Department"
                                       value={inputField.state.value}
                                       onBlur={inputField.handleBlur}
                                       onChange={(event) =>

@@ -89,7 +89,6 @@ export function PrintCards({
             />
             <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl font-medium w-full text-center">{card.name}</p>
             <h2 className="absolute bottom-4 left-4 text-sm font-semibold">{card.title}</h2>
-            <p className="absolute bottom-4 right-4 text-sm font-semibold">{card.department}</p>
           </div>
           <div className="relative flex-1 border">
             <img 
@@ -99,7 +98,6 @@ export function PrintCards({
             />
             <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl font-medium w-full text-center">{card.name}</p>
             <h2 className="absolute bottom-4 left-4 text-sm font-semibold">{card.title}</h2>
-            <p className="absolute bottom-4 right-4 text-sm font-semibold">{card.department}</p>
           </div>
         </article>
       ))}

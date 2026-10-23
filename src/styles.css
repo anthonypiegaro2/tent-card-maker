@@ -137,24 +137,34 @@
 }
 
 @page {
-  size: A4 portrait;
   margin: 0;
 }
 
 @media print {
+  html,
+  body {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
   .print-root {
     position: static;
     left: auto;
-    width: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .sheet {
     box-sizing: border-box;
-    width: 210mm;
-    height: 297mm;
-    padding: 10mm;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
     break-after: page;
     page-break-after: always; /* fallback for older browsers */
   }
